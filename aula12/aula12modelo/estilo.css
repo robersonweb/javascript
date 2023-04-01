@@ -23,6 +23,10 @@ section{
     
 
 }
+div{
+    text-align: center;
+    padding: 10px;
+}
 
 footer{
     color: white;
