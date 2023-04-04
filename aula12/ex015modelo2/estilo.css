@@ -24,8 +24,12 @@ section{
 
 }
 div{
-    text-align: center;
+    /* text-align: center; */
     padding: 10px;
+}
+
+#res{
+    text-align: left;
 }
 
 footer{
