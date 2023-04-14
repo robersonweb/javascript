@@ -8,7 +8,7 @@ function contar() {
         window.alert('[ERRO] Faltam dados!')
         res.innerHTML = 'Impossível contar!'
     } else {
-        res.innerHTML = 'Contando: '
+        res.innerHTML = 'Contando: <br>'
         let i = Number(ini.value)  //criando outra variável para transformar o id=txti em número.
         let f = Number(fim.value)
         let p = Number(passo.value)
@@ -25,21 +25,14 @@ function contar() {
             }
             res.innerHTML += `\u{1f3c1}`
         } else {
-            //contagem regressiva
+        //contagem regressiva
             for(let c = i; c >= f; c -= p) {
                 res.innerHTML += `${c} \u{1f449}`
             }
 
         }
         res.innerHTML += `\u{1f3c1}`
-        
-
-
-
-        
-           
+               
     }
-        
-           
-
+     
 }
