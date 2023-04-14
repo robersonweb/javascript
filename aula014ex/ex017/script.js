@@ -5,7 +5,15 @@ function tabuada() {
         window.alert('Por favor, digite um número!')
     } else {
         let n = Number(num.value)
-        let 
+        let c = 1
+        tab.innerHTML = ''  //limpa a área da tabuada.
+        while(c <= 10 ) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n * c}`
+            item.value = `tab${c}` //usado para outras linguagens ex. PHP
+            tab.appendChild(item)
+            c++
+        }
     }
     
 
